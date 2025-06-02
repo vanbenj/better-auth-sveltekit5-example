@@ -1,0 +1,25 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+
+		
+		{
+			"name": "Launch server",
+			"request": "launch",
+			"runtimeArgs": ["dev"],
+			"runtimeExecutable": "pnpm",
+			"skipFiles": ["<node_internals>/**"],
+			"type": "node",
+			"console": "integratedTerminal",
+			"cwd": "${workspaceFolder}",
+		},
+
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "Launch browser",
+			"url": "http://localhost:5173",
+			"webRoot": "${workspaceFolder}"
+		},
+	]
+}
