@@ -42,3 +42,20 @@ If you want to use a different database, say Postgres then do the following:
    npx drizzle-kit generate --name='Better-Auth-schema'
    npx drizzle-kit migrate
    ```
+
+## Notes and references
+
+### SvelteCookies BetterAuth plugin
+
+The SvelteCookies plugin was implemented to fix this known [issue](https://github.com/better-auth/better-auth/issues/600).
+The code for the plugin was taken from this [gist](https://gist.github.com/actuallyjamez/d345f52b3ecaaebadd320f98909951d6) courtesy of @actuallyjamez
+
+### ChromeDevTools
+
+My dev server kept throwing 404 errors while using Chrome in dev mode.
+[vite-plugin-devtools-json](https://github.com/ChromeDevTools/vite-plugin-devtools-json) provided a way to prevent that.
+
+### Superforms
+
+I ran into some issues using runes with Svelte 5 and Superforms.
+This sveltekit-superforms [issue](https://github.com/ciscoheat/sveltekit-superforms/issues/577) provided guidance.
